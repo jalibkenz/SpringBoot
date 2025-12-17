@@ -90,7 +90,9 @@
             <div class="form-card">
 
                 <!-- CONTENT JSP LOADS HERE -->
-                <jsp:include page="${contentPage}" />
+                <c:if test="${not empty reportContent}">
+                    <jsp:include page="${contentPage}" />
+                </c:if>
 
             </div>
         </div>

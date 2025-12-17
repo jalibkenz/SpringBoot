@@ -49,4 +49,11 @@ public class StudentDaoImpl implements StudentDao {
             entityManager.remove(student);
         }
     }
+
+    @Override
+    public List<Student> findAll() {
+        return entityManager
+                .createQuery("SELECT s FROM Student s", Student.class)
+                .getResultList();
+    }
 }

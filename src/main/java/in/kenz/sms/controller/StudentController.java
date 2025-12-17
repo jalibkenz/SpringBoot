@@ -224,4 +224,8 @@ public class StudentController {
             studentService.deleteById(id);
             return "redirect:/student/find";
         }
+
+
+
+
 }

@@ -108,6 +108,19 @@
             </a>
         </div>
 
+        <!-- REPORT -->
+        <div class="col-lg-3 col-md-6">
+            <a href="${pageContext.request.contextPath}/reports"
+               class="text-decoration-none text-dark">
+                <div class="card dashboard-card text-center p-4">
+                    <div class="icon-circle icon-find">📊</div>
+                    <h5>Reports</h5>
+                    <p class="text-muted mb-0">View student reports</p>
+                </div>
+            </a>
+        </div>
+
+
     </div>
 
 </div>

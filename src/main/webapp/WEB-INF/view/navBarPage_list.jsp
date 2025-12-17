@@ -8,7 +8,7 @@
 
 <h4>Courses</h4>
 <ul>
-    <c:forEach items="${student.courses}" var="c">
-        <li>${c.courseName}</li>
+    <c:forEach items="${courses}" var="c">
+        <li>${courses.courseName}</li>
     </c:forEach>
 </ul>

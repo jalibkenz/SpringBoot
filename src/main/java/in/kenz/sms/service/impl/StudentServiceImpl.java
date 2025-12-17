@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -145,4 +146,11 @@ public class StudentServiceImpl implements StudentService {
     public void deleteById(Integer id) {
         studentDao.deleteById(id);
     }
+
+    @Override
+    public List<Student> findAllStudents() {
+        return studentDao.findAll();
+    }
+
+
 }
